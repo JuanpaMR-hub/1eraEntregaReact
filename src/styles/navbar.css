@@ -1,0 +1,11 @@
+.navbar-menu .navbar-start{
+    width: 100%;
+}
+
+.navbar-start{
+    justify-content: space-evenly;
+}
+
+.navbar-brand > a{
+   font-size: 1.5em;
+}

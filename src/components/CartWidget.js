@@ -1,3 +1,5 @@
+// Falta estilo y mejorar la imagen
+
 import carrito from "../img/cartimg.png"
 function CartWidget(){
     return(
