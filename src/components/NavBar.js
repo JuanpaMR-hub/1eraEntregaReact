@@ -30,14 +30,14 @@ function NavBar(){
                 </div>
                 <div className="navbar-end">
                 <div className="navbar-item">
-                    <img src="./img/cartimg.png" alt="CART"/>
+                <CartWidget/>
                 </div>
 
             </div>
             </div>
            
 
-            {/* <CartWidget/> */}
+            
         </nav>
     )
 }

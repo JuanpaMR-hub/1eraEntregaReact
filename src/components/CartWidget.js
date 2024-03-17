@@ -1,11 +1,20 @@
-// Falta estilo y mejorar la imagen
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "./context/CartContext";
 
-import carrito from "../img/cartimg.png"
-function CartWidget(){
+import cart from "../assets/shopping-cart-outline-svgrepo-com.svg"
+
+
+const CartWidget = () =>{
+    const { totalQuantity } = useContext(CartContext)
     return(
-        <div>
-            <a className="cart" href="#"><img src={carrito}/></a>
-        </div>
+        <Link to="/cart" className="CartWidget" style={{display: totalQuantity > 0 ? 'block':'none'}}>
+            <img className="CartImg" src={cart} alt="cart-widget"/>
+            {totalQuantity}
+
+
+        </Link>
+        
     )
 }
 
