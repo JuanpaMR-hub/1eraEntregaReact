@@ -52,7 +52,7 @@ const ItemDetail = ({
                   </div>
                   <div className="content p-5 has-text-grey-light">
                     {quantityAdded > 0 ? (
-                      <Link to="/cart" className="Option">
+                      <Link to="#" className="Option">
                         <button className="button is-primary is-medium is-fullwidth has-text-weight-semibold">
                           Terminar compra
                         </button>
