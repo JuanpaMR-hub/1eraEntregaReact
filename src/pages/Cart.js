@@ -15,7 +15,7 @@ const Cart = () =>{
                 <span class="icon">
                     <i class="fas fa-home"></i>
                 </span>
-                <Link to="/" className="Option">Productos</Link>
+                <Link to="/" className="button is-primary">Ver Productos</Link>
             </div>
         )
     }   
@@ -26,8 +26,8 @@ const Cart = () =>{
             
             {cart.map(p => <CartItem key={p.id}{...p}/> )}
             <h3>Total: ${totalPrice}</h3>
-            <button onClick={()=> clearCart()} className="Button">Limpiar Carrito</button>
-            <Link to="/checkout" className="Option">Checkout</Link>
+            <button onClick={()=> clearCart()} className="button is-danger">Limpiar Carrito</button>
+            <Link to="/checkout" className="Option button is-primary">Checkout</Link>
         </div>
     )
 }

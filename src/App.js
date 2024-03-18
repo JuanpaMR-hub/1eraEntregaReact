@@ -1,12 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "bulma/css/bulma.css";
-import "./styles/navbar.css";
 
+// Pages
 import Layout from "./pages/Layout";
 import ItemListContainer from "./pages/ItemListContainer";
 import ItemDetailContainer from "./pages/ItemDetailContainer";
-import { CartProvider } from "./components/context/CartContext";
 import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout"
+
+// Local
+import "bulma/css/bulma.css";
+import "./styles/navbar.css";
+import { CartProvider } from "./components/context/CartContext";
 
 function App() {
   return (
@@ -21,6 +25,7 @@ function App() {
             />
             <Route path="/item/:itemId" element={<ItemDetailContainer />} />
             <Route path="/cart" element={<Cart/>}/>
+            <Route path="/checkout" element={<Checkout/>} />
           </Route>
         </Routes>
       </CartProvider>

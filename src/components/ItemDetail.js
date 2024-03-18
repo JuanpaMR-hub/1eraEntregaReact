@@ -62,11 +62,21 @@ const ItemDetail = ({
                   </div>
                   <div className="content p-5 has-text-grey-light">
                     {quantityAdded > 0 ? (
-                      <Link to="#" className="Option">
-                        <button className="button is-primary is-medium is-fullwidth has-text-weight-semibold">
+                      <div className="is-flex is-justify-content-space-between">
+                        <Link to="/cart" className="Option">
+                        <button className="button is-primary is-large   has-text-weight-semibold">
                           Terminar compra
                         </button>
                       </Link>
+                      <Link to="/" className="Option">
+                        <button className="button is-primary is-large  has-text-weight-semibold">
+                          Seguir Comprando
+                        </button>
+                      </Link>
+
+                      </div>
+                      
+                      
                     ) : (
                       <ItemCount
                         initial={1}

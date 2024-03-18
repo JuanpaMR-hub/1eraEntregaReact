@@ -8,16 +8,17 @@ const CartItem = (prop) =>{
                 <div className="list-item-content">
                     <i class="fa-solid fa-trash-can"></i>
                     <div className="list-item-title">{prop.title}</div>
-                    <div className="list-item-description">{prop.description}</div>
+                    <div className="list-item-description">x{prop.quantity}</div>
                 </div>
             </div>
             
             <div class="list-item-controls">
-                <div class="buttons is-right">
+                <div class="buttons is-right">           
                     <button class="button">
-                        <span class="icon">
+                        Remove
+                        {/* <span class="icon">
                             <i class="fa-solid fa-trash-can"></i>
-                        </span>
+                        </span> */}
                         </button>
                 </div>
             </div>
