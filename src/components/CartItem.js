@@ -1,5 +1,12 @@
+import { useContext } from "react";
+import { CartContext } from "./context/CartContext";
+
 
 const CartItem = (prop) =>{
+
+    const {removeItem} = useContext(CartContext)
+
+
     return(
         <div>
             <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -12,10 +19,10 @@ const CartItem = (prop) =>{
                 </div>
             </div>
             
-            <div class="list-item-controls">
-                <div class="buttons is-right">           
-                    <button class="button">
-                        Remove
+            <div className="list-item-controls">
+                <div className="buttons is-right">           
+                    <button className="button" onClick={()=>removeItem(prop.id)} >
+                        Eliminar
                         {/* <span class="icon">
                             <i class="fa-solid fa-trash-can"></i>
                         </span> */}
